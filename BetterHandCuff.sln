@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.35806.103
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetterHandCuff", "BetterHandCuff\BetterHandCuff.csproj", "{BECFD669-E39B-4910-A3C2-4B7B46C6803A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BECFD669-E39B-4910-A3C2-4B7B46C6803A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BECFD669-E39B-4910-A3C2-4B7B46C6803A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BECFD669-E39B-4910-A3C2-4B7B46C6803A}.Debug|x64.ActiveCfg = Debug|x64
+		{BECFD669-E39B-4910-A3C2-4B7B46C6803A}.Debug|x64.Build.0 = Debug|x64
+		{BECFD669-E39B-4910-A3C2-4B7B46C6803A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BECFD669-E39B-4910-A3C2-4B7B46C6803A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BECFD669-E39B-4910-A3C2-4B7B46C6803A}.Release|x64.ActiveCfg = Release|x64
+		{BECFD669-E39B-4910-A3C2-4B7B46C6803A}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {09C45D8A-492C-42F5-8F70-0E9618A7C0D0}
+	EndGlobalSection
+EndGlobal
