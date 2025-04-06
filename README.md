@@ -3,7 +3,7 @@ BetterHandCuff is a plugin that changes the entire handcuff system to a complete
 Wait for updates! (;
 <div style="background-color: #fff3cd; color: #856404; border: 1px solid #ffeeba; padding: 15px; border-radius: 5px; margin-bottom: 20px;">
   <strong>⚠️ Caution!</strong><br>
-  The current configuration is poorly prepared, so I recommend creating your own custom configuration instead of using the default one, also debug doesn't work yet.
+  Debug doesn't work yet.
 </div>
 <h2>Features:</h2>
 <table>
