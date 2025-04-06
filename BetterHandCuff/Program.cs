@@ -11,7 +11,7 @@ namespace BetterHandCuff
         public override string Author => "Ezua";
         public override string Name => "BetterHandCuff";
         public override string Prefix => "BetterHandCuff";
-        public override Version Version { get; } = new(1, 0, 0, 0);
+        public override Version Version { get; } = new(1, 1, 0, 0);
         public override Version RequiredExiledVersion { get; } = new(9, 5, 1, 0);
 
 
