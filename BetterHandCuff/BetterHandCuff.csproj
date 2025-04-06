@@ -71,7 +71,7 @@
     <Compile Include="EventHandlers\EndingRoundEvent.cs" />
     <Compile Include="EventHandlers\PlayerSpawnedEvent.cs" />
     <Compile Include="EventHandlers\VerifiedEvent.cs" />
-    <Compile Include="Ragdoll info.cs" />
+    <Compile Include="Ragdoll_info.cs" />
     <Compile Include="Commands.cs" />
     <Compile Include="EventHandlers\SpawnedRagdollEvent.cs" />
     <Compile Include="HandCuffManager.cs" />
