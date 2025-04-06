@@ -5,7 +5,7 @@ Wait for updates! (;
   <strong>⚠️ Caution!</strong><br>
   The current configuration is poorly prepared, so I recommend creating your own custom configuration instead of using the default one, also debug doesn't work yet.
 </div>
-﻿# features:
+<h2>Features:</h2>
 <table>
   <thead>
     <tr>
