@@ -5,4 +5,31 @@ Wait for updates! (;
   <strong>⚠️ Caution!</strong><br>
   The current configuration is poorly prepared, so I recommend creating your own custom configuration instead of using the default one, also debug doesn't work yet.
 </div>
+﻿# features:
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left;">🚀 Command</th>
+      <th style="text-align:center;">📝Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cuff</td>
+      <td style="text-align:center;">✅cuffs player</td>
+    </tr>
+    <tr>
+      <td>Uncuff</td>
+      <td style="text-align:center;">✅uncuffs player</td>
+    </tr>
+    <tr>
+      <td>Loot</td>
+      <td style="text-align:center;">✅ gets handcuffs from body</td>
+    </tr>
+    <tr>
+      <td>Checkamount</td>
+      <td style="text-align:center;">✅ checks handcuffs amount</td>
+    </tr>
+  </tbody>
+</table>
 
