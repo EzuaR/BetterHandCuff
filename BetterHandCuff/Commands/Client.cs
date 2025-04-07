@@ -1,7 +1,6 @@
 ﻿using CommandSystem;
 using Exiled.API.Features;
 using System;
-using System.Collections.Generic;
 using UnityEngine;
 
 
@@ -51,12 +50,7 @@ namespace BetterHandCuff
 
             Player playerhited = Player.Get(GotHit);
 
-            if (playerhited is null)
-            {
-                response = "You can't cuff nobody";
-                return false;
 
-            }
             if (playerhited is not null)
             {
                 playerhited.Handcuff(player);
@@ -172,7 +166,7 @@ namespace BetterHandCuff
             Player player = Player.Get(sender);
             Ragdoll closestRagdoll = null;
             response = "Something went wrong.";
-            
+
             if (player is null)
                 return false;
 

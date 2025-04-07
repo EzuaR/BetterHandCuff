@@ -1,7 +1,6 @@
 ﻿using Exiled.API.Features;
 using Exiled.Events.EventArgs.Player;
 using System.Threading.Tasks;
-using UnityEngine;
 
 namespace BetterHandCuff.EventHandlers
 {
@@ -18,9 +17,9 @@ namespace BetterHandCuff.EventHandlers
             int handcuffs = HandCuffManager.HowManyHandCuffs(player);
 
             Ragdoll ragdoll = ev.Ragdoll;
-           
 
-            await Task.Delay(2000); 
+
+            await Task.Delay(2000);
 
             DataSystem.SaveData(ragdoll, handcuffs);
             HandCuffManager.RemoveAllHandCuffs(player);

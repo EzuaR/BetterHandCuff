@@ -71,10 +71,10 @@
     <Compile Include="EventHandlers\EndingRoundEvent.cs" />
     <Compile Include="EventHandlers\PlayerSpawnedEvent.cs" />
     <Compile Include="EventHandlers\VerifiedEvent.cs" />
-    <Compile Include="Ragdoll_info.cs" />
-    <Compile Include="Commands.cs" />
+    <Compile Include="Dictionarys\Ragdoll_info.cs" />
+    <Compile Include="Commands\Client.cs" />
     <Compile Include="EventHandlers\SpawnedRagdollEvent.cs" />
-    <Compile Include="HandCuffManager.cs" />
+    <Compile Include="Dictionarys\HandCuffManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Configs\Config.cs" />
     <Compile Include="Configs\Translation.cs" />

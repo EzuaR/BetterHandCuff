@@ -1,6 +1,5 @@
 ﻿using Exiled.API.Features;
 using Exiled.Events.EventArgs.Server;
-using UnityEngine;
 using Player = Exiled.API.Features.Player;
 
 namespace BetterHandCuff.EventHandlers
@@ -19,7 +18,7 @@ namespace BetterHandCuff.EventHandlers
 
             foreach (Ragdoll ragdoll in Ragdoll.List)
             {
-                
+
                 DataSystem.RemoveData(ragdoll);
             }
 

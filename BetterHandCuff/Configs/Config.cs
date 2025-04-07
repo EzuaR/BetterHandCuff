@@ -15,12 +15,12 @@ namespace BetterHandCuff
         public int Time { get; set; } = 4;
 
         public float Range { get; set; } = 10;
-        
+
         public int Distance { get; set; } = 2;
 
         public int MaxHandCuff { get; set; } = 8;
         [Description("This class will get a handcuff on start of the game")]
-        public HashSet<RoleTypeId> HandCuffOnStart { get; set; } = new() { RoleTypeId.ChaosMarauder, RoleTypeId.ChaosConscript, RoleTypeId.ChaosRifleman, RoleTypeId.ChaosRepressor, RoleTypeId.NtfCaptain,RoleTypeId.NtfPrivate,RoleTypeId.NtfSergeant,RoleTypeId.NtfSpecialist, RoleTypeId.FacilityGuard};
+        public HashSet<RoleTypeId> HandCuffOnStart { get; set; } = new() { RoleTypeId.ChaosMarauder, RoleTypeId.ChaosConscript, RoleTypeId.ChaosRifleman, RoleTypeId.ChaosRepressor, RoleTypeId.NtfCaptain, RoleTypeId.NtfPrivate, RoleTypeId.NtfSergeant, RoleTypeId.NtfSpecialist, RoleTypeId.FacilityGuard };
         [Description("How many handcuff player that is in HandCuffOnStart will get on spawn as that role.")]
         public int HowManyHandCuffAdd { get; set; } = 2;
     }
