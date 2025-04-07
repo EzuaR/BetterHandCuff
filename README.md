@@ -32,4 +32,6 @@ Wait for updates! (;
     </tr>
   </tbody>
 </table>
-
+<h2>How to download:</h2>
+To download you can click on releases or use the following command in the server console:
+hub install BetterHandCuff
