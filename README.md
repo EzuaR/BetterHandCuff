@@ -30,6 +30,10 @@ Wait for updates! (;
       <td>Checkamount</td>
       <td style="text-align:center;">✅ checks handcuffs amount</td>
     </tr>
+    <tr>
+      <td>CuffYourself</td>
+      <td style="text-align:center;">✅ Use it if you want to handcuff yourself</td>
+    </tr>
   </tbody>
 </table>
 <h2>How to download:</h2>
