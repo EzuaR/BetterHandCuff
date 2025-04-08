@@ -25,10 +25,19 @@ namespace BetterHandCuff
 
             Ray ray = new Ray(player.GameObject.transform.position, player.GameObject.transform.forward);
 
-            response = "Something went wrong";
+            
 
             if (player is null || player.GameObject == null)
+            {
+                response = "Something went wrong";
                 return false;
+            }
+            if (player.IsScp == true)
+            {
+                response = "Can't cuff players as SCP!";
+                return false;
+            }
+                
 
             if (HandCuffManager.HowManyHandCuffs(player) is 0)
             {
@@ -46,6 +55,12 @@ namespace BetterHandCuff
 
             }
 
+            if (player.IsCuffed == true)
+            {
+                response = "You cant use this command if you are cuffed.";
+                return false;
+            }
+
             GameObject GotHit = Hit.collider.transform.root.gameObject;
 
             Player playerhited = Player.Get(GotHit);
@@ -61,12 +76,12 @@ namespace BetterHandCuff
 
             }
 
-            if (playerhited == player)
+            if (playerhited == player) 
             {
                 response = "You can't handcuff yourself!";
                 return false;
             }
-
+            
 
 
 
@@ -100,12 +115,26 @@ namespace BetterHandCuff
 
             Ray ray = new Ray(player.GameObject.transform.position, player.GameObject.transform.forward);
 
-            response = "Something went wrong";
 
+            if (player.IsCuffed == true)
+            {
+                response = "You cant use this command if you are cuffed.";
+                return false;
+            }
 
 
             if (player is null || player.GameObject == null)
+            {
+                response = "Something went wrong";
                 return false;
+            }
+                
+
+            if (player.IsScp == true)
+            {
+                response = "You can't use handcuffs as scp!";
+                return false;
+            }
 
             if (!Physics.Raycast(ray, out Hit, Program.Instance.Config.Range))
             {
@@ -165,10 +194,24 @@ namespace BetterHandCuff
         {
             Player player = Player.Get(sender);
             Ragdoll closestRagdoll = null;
-            response = "Something went wrong.";
-
-            if (player is null)
+             if (player.IsCuffed == true)
+            {
+                response = "You cant use this command if you are cuffed.";
                 return false;
+            }
+
+            if (player is null) 
+            {
+                response = "something went wrong.";
+                return false;
+            }
+                
+            if (player.IsScp == true)
+            {
+                response = "You can't use get handcuffs as scp!";
+                return false;
+            }
+                
 
             int maxHandcuffs = Program.Instance.Config.MaxHandCuff;
             int playerHandcuffs = HandCuffManager.HowManyHandCuffs(player);
@@ -275,6 +318,49 @@ namespace BetterHandCuff
         }
 
 
+    }
+
+    [CommandHandler(typeof(ClientCommandHandler))]
+    public class CuffYourself : ICommand
+    {
+        public string Command => Program.Instance.Translation.CommandHandCuffSelfName;
+
+        public string[] Aliases => Array.Empty<string>();
+
+        public string Description => Program.Instance.Translation.CommandHandCuffSelfDesc;
+
+        public bool Execute(ArraySegment<string> arguments, ICommandSender sender, out string response)
+        {
+            Player player = Player.Get(sender);
+
+            if (player.IsCuffed == true)
+            {
+                response = "You cant use this command if you are cuffed.";
+                return false;
+            }
+
+            if (player.IsScp == true)
+            {
+                response = "You can't cuff yourself as SCP!";
+                return false;
+            }
+            int Amount = HandCuffManager.HowManyHandCuffs(player);
+            if (Amount == 0)
+            {
+                response = "You have 0 handcuffs. Can't Handcuff yourself.";
+                return false;
+            }
+            if (player is not null)
+            {
+                player.Handcuff(player);
+                response = "Command executed successfully.";
+                HandCuffManager.RemoveHandCuffs(player, 1);
+                return true;
+            }
+
+            response = "Something went wrong.";
+            return false;
+        }
     }
 }
 

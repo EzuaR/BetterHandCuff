@@ -68,7 +68,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\Remote_Admin.cs" />
     <Compile Include="EventHandlers\EndingRoundEvent.cs" />
+    <Compile Include="EventHandlers\HandcuffingEvent.cs" />
     <Compile Include="EventHandlers\PlayerSpawnedEvent.cs" />
     <Compile Include="EventHandlers\VerifiedEvent.cs" />
     <Compile Include="Dictionarys\Ragdoll_info.cs" />
