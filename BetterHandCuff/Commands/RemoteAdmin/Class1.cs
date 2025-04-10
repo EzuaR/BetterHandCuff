@@ -4,7 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BetterHandCuff.Commands
+namespace BetterHandCuff.Commands.RemoteAdmin
 {
-    // Soon. 
+    internal class Class1
+    {
+    }
 }

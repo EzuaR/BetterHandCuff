@@ -11,6 +11,7 @@ namespace BetterHandCuff
         public override string Author => "Ezua";
         public override string Name => "BetterHandCuff";
         public override string Prefix => "BetterHandCuff";
+        
         public override Version Version { get; } = new(1, 2, 0, 0);
         public override Version RequiredExiledVersion { get; } = new(9, 5, 1, 0);
 
@@ -23,7 +24,8 @@ namespace BetterHandCuff
             player.SpawnedRagdoll += EventHandlers.SpawnedRagdollEvent.OnSpawnedRagdollEvent;
             player.Verified += EventHandlers.VerifiedEvent.OnVerifiedEvent;
             player.Spawned += EventHandlers.PlayerSpawnedEvent.OnPlayerSpawnedEvent;
-            player.Handcuffing += EventHandlers.HandcuffingEvent.OnHandcuffingEvent;
+            player.Handcuffing += EventHandlers.HandcuffEvents.OnHandcuffingEvent;
+            player.RemovingHandcuffs += EventHandlers.HandcuffEvents.OnRemovingHandcuffsEvent;
 
             base.OnEnabled();
         }
@@ -35,7 +37,8 @@ namespace BetterHandCuff
             player.SpawnedRagdoll -= EventHandlers.SpawnedRagdollEvent.OnSpawnedRagdollEvent;
             player.Verified -= EventHandlers.VerifiedEvent.OnVerifiedEvent;
             player.Spawned -= EventHandlers.PlayerSpawnedEvent.OnPlayerSpawnedEvent;
-            player.Handcuffing -= EventHandlers.HandcuffingEvent.OnHandcuffingEvent;
+            player.Handcuffing -= EventHandlers.HandcuffEvents.OnHandcuffingEvent;
+            player.RemovingHandcuffs -= EventHandlers.HandcuffEvents.OnRemovingHandcuffsEvent;
 
             base.OnDisabled();
         }

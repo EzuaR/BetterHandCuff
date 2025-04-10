@@ -9,7 +9,7 @@ namespace BetterHandCuff.EventHandlers
 
         public static void OnEndRoundEvent(RoundEndedEventArgs ev)
         {
-
+            
             foreach (Player player in Player.List)
             {
                 HandCuffManager.RemovePlayerFromDictionary(player);

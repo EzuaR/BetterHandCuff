@@ -68,13 +68,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Commands\Remote_Admin.cs" />
+    <Compile Include="Commands\Client\Class1.cs" />
+    <Compile Include="Commands\Client\CuffYourself.cs" />
+    <Compile Include="Commands\Client\ChechHandCuffAmount.cs" />
+    <Compile Include="Commands\Client\GetHandCuff.cs" />
+    <Compile Include="Commands\Client\Uncuff.cs" />
+    <Compile Include="Commands\Client\Cuff.cs" />
+    <Compile Include="Commands\RemoteAdmin\Class1.cs" />
     <Compile Include="EventHandlers\EndingRoundEvent.cs" />
-    <Compile Include="EventHandlers\HandcuffingEvent.cs" />
+    <Compile Include="EventHandlers\HandcuffEvents.cs" />
     <Compile Include="EventHandlers\PlayerSpawnedEvent.cs" />
     <Compile Include="EventHandlers\VerifiedEvent.cs" />
     <Compile Include="Dictionarys\Ragdoll_info.cs" />
-    <Compile Include="Commands\Client.cs" />
     <Compile Include="EventHandlers\SpawnedRagdollEvent.cs" />
     <Compile Include="Dictionarys\HandCuffManager.cs" />
     <Compile Include="Program.cs" />
@@ -84,6 +89,9 @@
   <ItemGroup>
     <PackageReference Include="ExMod.Exiled">
       <Version>9.5.1</Version>
+    </PackageReference>
+    <PackageReference Include="Lib.Harmony">
+      <Version>2.3.5</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
