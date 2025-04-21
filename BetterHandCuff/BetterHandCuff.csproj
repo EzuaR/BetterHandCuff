@@ -68,13 +68,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Commands\Client\Class1.cs" />
     <Compile Include="Commands\Client\CuffYourself.cs" />
     <Compile Include="Commands\Client\ChechHandCuffAmount.cs" />
     <Compile Include="Commands\Client\GetHandCuff.cs" />
     <Compile Include="Commands\Client\Uncuff.cs" />
     <Compile Include="Commands\Client\Cuff.cs" />
-    <Compile Include="Commands\RemoteAdmin\Class1.cs" />
+    <Compile Include="Commands\RemoteAdmin\RemoveHandcuffs.cs" />
+    <Compile Include="Configs\configs\Config.cs" />
+    <Compile Include="Configs\configs\Translation.cs" />
     <Compile Include="EventHandlers\EndingRoundEvent.cs" />
     <Compile Include="EventHandlers\HandcuffEvents.cs" />
     <Compile Include="EventHandlers\PlayerSpawnedEvent.cs" />

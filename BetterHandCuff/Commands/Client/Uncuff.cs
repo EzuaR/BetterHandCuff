@@ -1,5 +1,7 @@
-﻿using CommandSystem;
+﻿using BetterHandCuff.Commands.RemoteAdmin;
+using CommandSystem;
 using Exiled.API.Features;
+using InventorySystem.Items.Firearms.Modules;
 using System;
 using UnityEngine;
 
@@ -23,6 +25,7 @@ namespace BetterHandCuff.Commands.Client
             RaycastHit Hit;
 
             Ray ray = new Ray(player.GameObject.transform.position, player.GameObject.transform.forward);
+            
 
 
             if (player.IsCuffed == true)
@@ -31,9 +34,10 @@ namespace BetterHandCuff.Commands.Client
                 return false;
             }
             
+            
             if (player.IsCuffed == false)
             {
-                response = "He isn't cuffed.";
+                response = "Player isn't cuffed.";
                 return false;
             }
 
@@ -57,7 +61,7 @@ namespace BetterHandCuff.Commands.Client
                 response = "Nothing found.";
                 return false;
             }
-
+           
 
 
 

@@ -6,7 +6,7 @@ using UnityEngine;
 namespace BetterHandCuff.Commands.Client
 {
     [CommandHandler(typeof(ClientCommandHandler))]
-    public class CuffYourself : ICommand
+    internal class CuffYourself : ICommand
     {
         public string Command => Program.Instance.Translation.CommandHandCuffSelfName;
 
@@ -17,6 +17,7 @@ namespace BetterHandCuff.Commands.Client
         public bool Execute(ArraySegment<string> arguments, ICommandSender sender, out string response)
         {
             Player player = Player.Get(sender);
+
 
             if (player.IsCuffed == true)
             {

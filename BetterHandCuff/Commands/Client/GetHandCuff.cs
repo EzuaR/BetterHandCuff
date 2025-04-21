@@ -18,6 +18,7 @@ namespace BetterHandCuff.Commands.Client
         {
             Player player = Player.Get(sender);
             Ragdoll closestRagdoll = null;
+
             if (player.IsCuffed == true)
             {
                 response = "You cant use this command if you are cuffed.";

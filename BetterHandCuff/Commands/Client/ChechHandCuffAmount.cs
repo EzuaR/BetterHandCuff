@@ -1,4 +1,5 @@
-﻿using CommandSystem;
+﻿using BetterHandCuff.Commands.RemoteAdmin;
+using CommandSystem;
 using Exiled.API.Features;
 using System;
 
@@ -19,7 +20,7 @@ namespace BetterHandCuff.Commands.Client
         {
             Player player = Player.Get(sender);
 
-
+          
             if (player.IsScp == true)
             {
                 response = "You don't have handcuff as scp!";
@@ -32,6 +33,7 @@ namespace BetterHandCuff.Commands.Client
 
 
             }
+            
             response = "Command executed successfully.";
             return true;
 

@@ -1,4 +1,5 @@
-﻿using CommandSystem;
+﻿using BetterHandCuff.Commands.RemoteAdmin;
+using CommandSystem;
 using Exiled.API.Features;
 using System;
 using UnityEngine;
@@ -24,7 +25,7 @@ namespace BetterHandCuff.Commands.Client
 
             Ray ray = new Ray(player.GameObject.transform.position, player.GameObject.transform.forward);
 
-
+            
 
             if (player is null || player.GameObject == null)
             {
