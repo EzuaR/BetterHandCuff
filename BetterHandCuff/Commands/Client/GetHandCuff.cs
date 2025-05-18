@@ -6,7 +6,7 @@ using UnityEngine;
 namespace BetterHandCuff.Commands.Client
 {
     [CommandHandler(typeof(ClientCommandHandler))]
-    public class GetHandCuff : MonoBehaviour, ICommand
+    public class GetHandCuff :  ICommand
     {
         public string Command => Program.Instance.Translation.CommandLootName;
 
@@ -95,7 +95,7 @@ namespace BetterHandCuff.Commands.Client
             if (difference > 0)
             {
                 DataSystem.RagdollRemoveHandCuff(closestRagdoll, difference);
-                player.ShowHint($"{Program.Instance.Translation.BodyLooting} {difference} {Program.Instance.Translation.BodyLooting2}", Program.Instance.Config.Time);
+                player.ShowHint(string.Format(Program.Instance.Translation.BodyLooting, difference), Program.Instance.Config.Time);
                 response = "You looted handcuffs from the body.";
                 return true;
             }

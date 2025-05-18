@@ -13,16 +13,12 @@ namespace BetterHandCuff.EventHandlers
             foreach (Player player in Player.List)
             {
                 HandCuffManager.RemovePlayerFromDictionary(player);
-
             }
 
             foreach (Ragdoll ragdoll in Ragdoll.List)
             {
-
                 DataSystem.RemoveData(ragdoll);
             }
-
-
 
         }
     }

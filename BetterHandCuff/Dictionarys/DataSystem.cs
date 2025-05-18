@@ -32,7 +32,6 @@ namespace BetterHandCuff
         {
             if (DataDic.TryGetValue(rag, out int handcuff))
             {
-
                 return handcuff;
             }
             else
@@ -46,13 +45,9 @@ namespace BetterHandCuff
             {
                 DataDic[rag] -= amount;
 
-
             }
 
         }
-
-
-
 
     }
 }

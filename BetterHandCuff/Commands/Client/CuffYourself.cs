@@ -39,8 +39,8 @@ namespace BetterHandCuff.Commands.Client
             if (player is not null)
             {
                 player.Handcuff(player);
-                response = "Command executed successfully.";
                 HandCuffManager.RemoveHandCuffs(player, 1);
+                response = "Command executed successfully.";
                 return true;
             }
 

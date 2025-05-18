@@ -18,7 +18,6 @@ namespace BetterHandCuff.EventHandlers
 
             Ragdoll ragdoll = ev.Ragdoll;
 
-
             await Task.Delay(2000);
 
             DataSystem.SaveData(ragdoll, handcuffs);

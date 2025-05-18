@@ -73,14 +73,11 @@
     <Compile Include="Commands\Client\GetHandCuff.cs" />
     <Compile Include="Commands\Client\Uncuff.cs" />
     <Compile Include="Commands\Client\Cuff.cs" />
-    <Compile Include="Commands\RemoteAdmin\RemoveHandcuffs.cs" />
-    <Compile Include="Configs\configs\Config.cs" />
-    <Compile Include="Configs\configs\Translation.cs" />
     <Compile Include="EventHandlers\EndingRoundEvent.cs" />
     <Compile Include="EventHandlers\HandcuffEvents.cs" />
     <Compile Include="EventHandlers\PlayerSpawnedEvent.cs" />
     <Compile Include="EventHandlers\VerifiedEvent.cs" />
-    <Compile Include="Dictionarys\Ragdoll_info.cs" />
+    <Compile Include="Dictionarys\DataSystem.cs" />
     <Compile Include="EventHandlers\SpawnedRagdollEvent.cs" />
     <Compile Include="Dictionarys\HandCuffManager.cs" />
     <Compile Include="Program.cs" />
@@ -89,13 +86,14 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="ExMod.Exiled">
-      <Version>9.5.1</Version>
+      <Version>9.6.0-beta8</Version>
     </PackageReference>
     <PackageReference Include="Lib.Harmony">
       <Version>2.3.5</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Commands\RemoteAdmin\" />
     <Folder Include="Properties\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

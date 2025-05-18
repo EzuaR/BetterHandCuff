@@ -22,13 +22,8 @@ namespace BetterHandCuff
         public string CuffHint { get; set; } = "You cuffed the player.";
         public string UnCuffHint { get; set; } = "You uncuffed the player.";
         [Description("In this case you need to make something like: 'HandCuffAmount (number) HandCuffAmount2 or just HandCuffAmount (number) and set HandCuffAmount2 to blank' ")]
-        public string HandCuffAmount { get; set; } = "You have ";
-        public string HandCuffAmount2 { get; set; } = "handcuffs.";
-        public string BodyLooting { get; set; } = "You have acquired ";
-        public string BodyLooting2 { get; set; } = "handcuffs.";
-
-
-
+        public string HandCuffAmount { get; set; } = "You have {0} handcuffs. ";
+        public string BodyLooting { get; set; } = "You have acquired {0} handcuffs. ";
 
     }
 }

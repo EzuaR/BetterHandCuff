@@ -1,4 +1,4 @@
-﻿using BetterHandCuff.Commands.RemoteAdmin;
+﻿
 using CommandSystem;
 using Exiled.API.Features;
 using InventorySystem.Items.Firearms.Modules;
@@ -8,7 +8,7 @@ using UnityEngine;
 namespace BetterHandCuff.Commands.Client
 {
     [CommandHandler(typeof(ClientCommandHandler))]
-    public class Uncuff : MonoBehaviour, ICommand
+    public class Uncuff : ICommand
     {
 
         public string[] Aliases => Array.Empty<string>();

@@ -1,8 +1,6 @@
-﻿using BetterHandCuff.Commands.RemoteAdmin;
-using CommandSystem;
+﻿using CommandSystem;
 using Exiled.API.Features;
 using System;
-
 
 namespace BetterHandCuff.Commands.Client
 {
@@ -28,21 +26,15 @@ namespace BetterHandCuff.Commands.Client
             }
             if (player is not null)
             {
-
-                player.ShowHint($"{Program.Instance.Translation.HandCuffAmount}{HandCuffManager.HowManyHandCuffs(player)} {Program.Instance.Translation.HandCuffAmount2}", Program.Instance.Config.Time);
-
-
+                player.ShowHint(string.Format(Program.Instance.Translation.HandCuffAmount, HandCuffManager.HowManyHandCuffs(player)), Program.Instance.Config.Time);
             }
             
             response = "Command executed successfully.";
             return true;
 
-
         }
 
-
     }
-
 
 }
 

@@ -1,4 +1,4 @@
-﻿using BetterHandCuff.Commands.RemoteAdmin;
+﻿
 using CommandSystem;
 using Exiled.API.Features;
 using System;
@@ -8,7 +8,7 @@ namespace BetterHandCuff.Commands.Client
 {
 
     [CommandHandler(typeof(ClientCommandHandler))]
-    public class Cuff : MonoBehaviour, ICommand
+    public class Cuff : ICommand
     {
 
         public string[] Aliases => Array.Empty<string>();
