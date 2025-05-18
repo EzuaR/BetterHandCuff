@@ -88,9 +88,6 @@
     <PackageReference Include="ExMod.Exiled">
       <Version>9.6.0-beta8</Version>
     </PackageReference>
-    <PackageReference Include="Lib.Harmony">
-      <Version>2.3.5</Version>
-    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Commands\RemoteAdmin\" />
