@@ -15,7 +15,6 @@ namespace BetterHandCuff
         public override Version Version { get; } = new(1, 2, 0, 0);
         public override Version RequiredExiledVersion { get; } = new(9, 6, 0, 0);
 
-
         public override void OnEnabled()
         {
             Instance = this;
