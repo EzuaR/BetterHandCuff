@@ -26,7 +26,7 @@ namespace BetterHandCuff.Commands.Client
 
             Ray ray = new Ray(player.GameObject.transform.position, player.GameObject.transform.forward);
 
-            
+
 
             if (player is null || player.GameObject == null)
             {

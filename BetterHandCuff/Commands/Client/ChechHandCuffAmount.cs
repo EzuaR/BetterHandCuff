@@ -19,7 +19,7 @@ namespace BetterHandCuff.Commands.Client
         {
             Player player = Player.Get(sender);
 
-          
+
             if (player.IsScp == true)
             {
                 response = "You don't have handcuff as scp!";
@@ -29,7 +29,7 @@ namespace BetterHandCuff.Commands.Client
             {
                 player.ShowHint(string.Format(Program.Instance.Translation.HandCuffAmount, HandCuffManager.HowManyHandCuffs(player)), Program.Instance.Config.Time);
             }
-            
+
             response = "Command executed successfully.";
             return true;
 

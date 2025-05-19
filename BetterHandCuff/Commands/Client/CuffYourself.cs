@@ -2,7 +2,6 @@
 using CommandSystem;
 using Exiled.API.Features;
 using System;
-using UnityEngine;
 
 namespace BetterHandCuff.Commands.Client
 {

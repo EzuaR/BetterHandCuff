@@ -18,7 +18,7 @@ namespace BetterHandCuff
         public string CommandLootDesc { get; set; } = "Just approach the body and enter the command. This will give you a random number of handcuffs that body has on it.";
         public string CommandHandCuffSelfDesc { set; get; } = "Use it if you want to handcuff yourself";
 
-       [Description("Hints content")]
+        [Description("Hints content")]
         public string CuffHint { get; set; } = "You cuffed the player.";
         public string UnCuffHint { get; set; } = "You uncuffed the player.";
         [Description("In this case you need to make something like: 'HandCuffAmount (number) HandCuffAmount2 or just HandCuffAmount (number) and set HandCuffAmount2 to blank' ")]

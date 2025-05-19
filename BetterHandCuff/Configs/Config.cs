@@ -29,6 +29,6 @@ namespace BetterHandCuff
         [Description("false if you want only to use plugin handcuffing system true if you also want both. ")]
 
         public bool NormalHandCuff { get; set; } = false;
-       
+
     }
 }

@@ -7,7 +7,7 @@ using UnityEngine;
 namespace BetterHandCuff.Commands.Client
 {
     [CommandHandler(typeof(ClientCommandHandler))]
-    public class GetHandCuff :  ICommand
+    public class GetHandCuff : ICommand
     {
         public string Command => Program.Instance.Translation.CommandLootName;
 
