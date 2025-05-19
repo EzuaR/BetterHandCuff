@@ -1,4 +1,5 @@
 ﻿
+using BetterHandCuff.Dictionaries;
 using CommandSystem;
 using Exiled.API.Features;
 using System;

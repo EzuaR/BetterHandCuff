@@ -2,6 +2,7 @@
 using System;
 using player = Exiled.Events.Handlers.Player;
 using server = Exiled.Events.Handlers.Server;
+
 namespace BetterHandCuff
 {
     public class Program : Plugin<Config, Translation>

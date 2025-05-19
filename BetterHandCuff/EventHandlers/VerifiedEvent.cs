@@ -1,4 +1,5 @@
-﻿using Exiled.API.Features;
+﻿using BetterHandCuff.Dictionaries;
+using Exiled.API.Features;
 using Exiled.Events.EventArgs.Player;
 
 namespace BetterHandCuff.EventHandlers

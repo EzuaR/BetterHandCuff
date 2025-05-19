@@ -49,6 +49,9 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\..\..\..\..\..\scpsl\SCPSL_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
     <Reference Include="Mirror">
       <HintPath>..\..\..\..\..\..\scpsl\SCPSL_Data\Managed\Mirror.dll</HintPath>
     </Reference>
@@ -77,9 +80,9 @@
     <Compile Include="EventHandlers\HandcuffEvents.cs" />
     <Compile Include="EventHandlers\PlayerSpawnedEvent.cs" />
     <Compile Include="EventHandlers\VerifiedEvent.cs" />
-    <Compile Include="Dictionarys\DataSystem.cs" />
+    <Compile Include="Dictionaries\DataSystem.cs" />
     <Compile Include="EventHandlers\SpawnedRagdollEvent.cs" />
-    <Compile Include="Dictionarys\HandCuffManager.cs" />
+    <Compile Include="Dictionaries\HandCuffManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Configs\Config.cs" />
     <Compile Include="Configs\Translation.cs" />
