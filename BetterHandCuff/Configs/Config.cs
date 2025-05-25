@@ -1,4 +1,5 @@
-﻿using Exiled.API.Interfaces;
+﻿using CommandSystem.Commands.RemoteAdmin.Dms;
+using Exiled.API.Interfaces;
 using PlayerRoles;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -29,6 +30,10 @@ namespace BetterHandCuff
         [Description("false if you want only to use plugin handcuffing system true if you also want both. ")]
 
         public bool NormalHandCuff { get; set; } = false;
+
+        public bool HandCuffPlayerFromTheSameTeam { get; set; } = true;
+
+        
 
     }
 }

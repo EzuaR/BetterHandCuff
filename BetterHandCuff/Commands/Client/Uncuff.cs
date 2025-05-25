@@ -35,13 +35,6 @@ namespace BetterHandCuff.Commands.Client
             }
 
 
-            if (player.IsCuffed == false)
-            {
-                response = "Player isn't cuffed.";
-                return false;
-            }
-
-
             if (player is null || player.GameObject == null)
             {
                 response = "Something went wrong";
