@@ -4,7 +4,7 @@ using PlayerRoles;
 using System.Collections.Generic;
 using System.ComponentModel;
 
-namespace BetterHandCuff
+namespace BetterHandCuff.Configs
 {
     public class Config : IConfig
     {

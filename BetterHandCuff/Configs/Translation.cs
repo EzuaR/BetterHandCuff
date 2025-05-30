@@ -1,7 +1,7 @@
 ﻿using Exiled.API.Interfaces;
 using System.ComponentModel;
 
-namespace BetterHandCuff
+namespace BetterHandCuff.Configs
 {
     public class Translation : ITranslation
     {
