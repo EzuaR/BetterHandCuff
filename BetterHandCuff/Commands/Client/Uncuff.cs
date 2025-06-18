@@ -69,6 +69,12 @@ namespace BetterHandCuff.Commands.Client
                 return false;
             }
 
+            if (playerhited.IsCuffed == false)
+            {
+                response = "Player is already uncuffed";
+                return false;
+            }
+
 
 
 
