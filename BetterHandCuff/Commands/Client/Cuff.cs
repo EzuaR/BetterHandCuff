@@ -66,17 +66,6 @@ namespace BetterHandCuff.Commands.Client
 
             Player playerhited = Player.Get(GotHit);
 
-
-            if (playerhited is not null)
-            {
-                playerhited.Handcuff(player);
-                player.ShowHint(Program.Instance.Translation.CuffHint, Program.Instance.Config.Time);
-                HandCuffManager.RemoveHandCuffs(player, 1);
-
-
-
-            }
-
             if (playerhited == player)
             {
                 response = "You can't handcuff yourself!";
@@ -84,7 +73,13 @@ namespace BetterHandCuff.Commands.Client
             }
 
 
+            if (playerhited is not null)
+            {
+                playerhited.Handcuff(player);
+                player.ShowHint(Program.Instance.Translation.CuffHint, Program.Instance.Config.Time);
+                HandCuffManager.RemoveHandCuffs(player, 1);
 
+            }
 
             response = "Command executed successfully";
             return true;
