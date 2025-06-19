@@ -6,6 +6,8 @@ Wait for updates! (;
   Debug doesn't work yet.
 </div>
 <h2>Features:</h2>
+<p>🟥 - Doesn't work.</p>
+<p>✅- It works.</p>
 <table>
   <thead>
     <tr>
@@ -32,7 +34,7 @@ Wait for updates! (;
     </tr>
     <tr>
       <td>CuffYourself</td>
-      <td style="text-align:center;">✅ Use it if you want to handcuff yourself</td>
+      <td style="text-align:center;">🟥 Use it if you want to handcuff yourself</td>
     </tr>
   </tbody>
 </table>
