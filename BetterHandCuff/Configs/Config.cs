@@ -1,5 +1,4 @@
-﻿using CommandSystem.Commands.RemoteAdmin.Dms;
-using Exiled.API.Interfaces;
+﻿using Exiled.API.Interfaces;
 using PlayerRoles;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -33,7 +32,7 @@ namespace BetterHandCuff.Configs
 
         public bool HandCuffPlayerFromTheSameTeam { get; set; } = true;
 
-        
+
 
     }
 }

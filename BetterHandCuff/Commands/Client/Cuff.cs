@@ -22,9 +22,8 @@ namespace BetterHandCuff.Commands.Client
         {
             Player player = Player.Get(sender);
 
-            RaycastHit Hit;
 
-            Ray ray = new Ray(player.GameObject.transform.position, player.GameObject.transform.forward);
+            Ray ray = new(player.GameObject.transform.position, player.GameObject.transform.forward);
 
 
 
@@ -48,7 +47,7 @@ namespace BetterHandCuff.Commands.Client
             }
 
 
-            if (!Physics.Raycast(ray, out Hit, Program.Instance.Config.Range))
+            if (!Physics.Raycast(ray, out RaycastHit Hit, Program.Instance.Config.Range))
             {
 
                 response = "Nothing found.";

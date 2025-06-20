@@ -54,6 +54,7 @@
     <Reference Include="UnityEngine.PhysicsModule" HintPath="$(EXILED_REFERENCES)\UnityEngine.PhysicsModule.dll" Private="false" />
     <Reference Include="UnityEngine" HintPath="$(EXILED_REFERENCES)\UnityEngine.dll" Private="false" />
     <Reference Include="Assembly-CSharp-firstpass" HintPath="$(EXILED_REFERENCES)\Assembly-CSharp-firstpass.dll" Private="false" />
+    <Reference Include="Pooling" HintPath="$(EXILED_REFERENCES)\Pooling.dll" Private="false" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -76,6 +77,7 @@
     <Compile Include="Dictionaries\DataSystem.cs" />
     <Compile Include="EventHandlers\SpawnedRagdollEvent.cs" />
     <Compile Include="Dictionaries\HandCuffManager.cs" />
+    <Compile Include="Patches\PlayerCuffingPrefix.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Configs\Config.cs" />
     <Compile Include="Configs\Translation.cs" />
@@ -83,6 +85,9 @@
   <ItemGroup>
     <PackageReference Include="ExMod.Exiled">
       <Version>9.6.1</Version>
+    </PackageReference>
+    <PackageReference Include="Lib.Harmony">
+      <Version>2.3.6</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>

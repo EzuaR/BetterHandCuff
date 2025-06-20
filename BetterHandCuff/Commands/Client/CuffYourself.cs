@@ -1,6 +1,7 @@
 ﻿using BetterHandCuff.Dictionaries;
 using CommandSystem;
 using Exiled.API.Features;
+using MEC;
 using System;
 
 namespace BetterHandCuff.Commands.Client
@@ -38,8 +39,13 @@ namespace BetterHandCuff.Commands.Client
             }
             if (player is not null)
             {
-                player.Handcuff(player);
-                HandCuffManager.RemoveHandCuffs(player, 1);
+                player.DropItems();
+                Timing.CallDelayed(1f, () =>
+                {
+                    player.Handcuff(player);
+                    HandCuffManager.RemoveHandCuffs(player, 1);
+
+                });
                 response = "Command executed successfully.";
                 return true;
             }
