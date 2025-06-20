@@ -34,7 +34,7 @@ Wait for updates! (;
     </tr>
     <tr>
       <td>CuffYourself</td>
-      <td style="text-align:center;">🟥 Use it if you want to handcuff yourself</td>
+      <td style="text-align:center;">✅ Use it if you want to handcuff yourself</td>
     </tr>
   </tbody>
 </table>
