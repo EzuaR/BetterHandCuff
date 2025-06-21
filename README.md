@@ -6,12 +6,13 @@ Wait for updates! (;
   Debug doesn't work yet.
 </div>
 <h2>Features:</h2>
+<h3>Client Commands:</h3>
 <p>🟥 - Doesn't work.</p>
 <p>✅- It works.</p>
 <table>
   <thead>
     <tr>
-      <th style="text-align:left;">🚀 Command</th>
+      <th style="text-align:left;">🚀 Name</th>
       <th style="text-align:center;">📝Description</th>
     </tr>
   </thead>
