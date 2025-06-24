@@ -7,7 +7,6 @@ namespace BetterHandCuff.Dictionaries
     public static class DataSystem
     {
         private static Dictionary<Ragdoll, int> DataDic = new Dictionary<Ragdoll, int>();
-
         public static void SaveData(Ragdoll rag, int handcuffamount)
         {
             if (!DataDic.ContainsKey(rag))
@@ -21,7 +20,6 @@ namespace BetterHandCuff.Dictionaries
         }
         public static bool GetPos(Ragdoll rag)
         {
-
             if (!DataDic.ContainsKey(rag))
             {
                 return false;
@@ -44,11 +42,8 @@ namespace BetterHandCuff.Dictionaries
             if (DataDic.ContainsKey(rag))
             {
                 DataDic[rag] -= amount;
-
             }
-
         }
-
     }
 }
 

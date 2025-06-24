@@ -8,17 +8,12 @@ namespace BetterHandCuff.Commands.Client
     [CommandHandler(typeof(ClientCommandHandler))]
     public class ChechHandCuffAmount : ICommand
     {
-
         public string Command => Program.Instance.Translation.CommandCheckHandCuffAmountName;
-
         public string[] Aliases => Array.Empty<string>();
-
         public string Description => Program.Instance.Translation.CommandCheckHandCuffAmountDesc;
-
         public bool Execute(ArraySegment<string> arguments, ICommandSender sender, out string response)
         {
             Player player = Player.Get(sender);
-
 
             if (player.IsScp == true)
             {
@@ -32,10 +27,7 @@ namespace BetterHandCuff.Commands.Client
 
             response = "Command executed successfully.";
             return true;
-
         }
-
     }
-
 }
 

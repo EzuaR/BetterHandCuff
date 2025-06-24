@@ -15,7 +15,7 @@ namespace BetterHandCuff
         public override string Author => "@ezuareal";
         public override string Name => "BetterHandCuff";
         public override string Prefix => "BetterHandCuff";
-        public override Version Version { get; } = new(1, 3, 0);
+        public override Version Version { get; } = new(1, 4, 0);
         public override Version RequiredExiledVersion { get; } = new(9, 6, 1);
         public override PluginPriority Priority => PluginPriority.Higher;
 
@@ -50,7 +50,5 @@ namespace BetterHandCuff
 
             base.OnDisabled();
         }
-
-
     }
 }

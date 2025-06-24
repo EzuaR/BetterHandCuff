@@ -14,13 +14,16 @@ namespace BetterHandCuff.EventHandlers
 
         private static void HandleRagdollSpawn(SpawnedRagdollEventArgs ev)
         {
-            Player player = ev.Player;
-            int handcuffs = HandCuffManager.HowManyHandCuffs(player);
+            if (Program.Instance.Config.InfinityHandCuffs == false)
+            {
+                Player player = ev.Player;
+                int handcuffs = HandCuffManager.HowManyHandCuffs(player);
 
-            Ragdoll ragdoll = ev.Ragdoll;
+                Ragdoll ragdoll = ev.Ragdoll;
 
-            DataSystem.SaveData(ragdoll, handcuffs);
-            HandCuffManager.RemoveAllHandCuffs(player);
+                DataSystem.SaveData(ragdoll, handcuffs);
+                HandCuffManager.RemoveAllHandCuffs(player);
+            }
         }
     }
 }

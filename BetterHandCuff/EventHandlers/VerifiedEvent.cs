@@ -11,7 +11,6 @@ namespace BetterHandCuff.EventHandlers
             Player player = ev.Player;
 
             HandCuffManager.RemoveAllHandCuffs(player);
-
         }
     }
 }

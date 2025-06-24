@@ -77,7 +77,7 @@
     <Compile Include="Dictionaries\DataSystem.cs" />
     <Compile Include="EventHandlers\SpawnedRagdollEvent.cs" />
     <Compile Include="Dictionaries\HandCuffManager.cs" />
-    <Compile Include="Patches\PlayerCuffingPrefix.cs" />
+    <Compile Include="Patches\AllowDisarmingPrefix.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Configs\Config.cs" />
     <Compile Include="Configs\Translation.cs" />

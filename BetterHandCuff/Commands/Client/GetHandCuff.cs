@@ -10,11 +10,8 @@ namespace BetterHandCuff.Commands.Client
     public class GetHandCuff : ICommand
     {
         public string Command => Program.Instance.Translation.CommandLootName;
-
         public string[] Aliases => Array.Empty<string>();
-
         public string Description => Program.Instance.Translation.CommandLootDesc;
-
         public bool Execute(ArraySegment<string> arguments, ICommandSender sender, out string response)
         {
             Player player = Player.Get(sender);
@@ -25,17 +22,21 @@ namespace BetterHandCuff.Commands.Client
                 response = "You cant use this command if you are cuffed.";
                 return false;
             }
-
             if (player is null)
             {
                 response = "something went wrong.";
                 return false;
             }
-
             if (player.IsScp == true)
             {
                 response = "You can't use get handcuffs as scp!";
                 return false;
+            }
+            if (Program.Instance.Config.InfinityHandCuffs == true)
+            {
+                response = "Command executed succesfully.";
+                player.ShowHint(Program.Instance.Translation.BodyLootingInfinityHandCuffs, Program.Instance.Config.Time);
+                return true;
             }
 
 

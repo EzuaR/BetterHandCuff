@@ -7,7 +7,6 @@ namespace BetterHandCuff.EventHandlers
 {
     public class EndedRoundEvent
     {
-
         public static void OnEndRoundEvent(RoundEndedEventArgs ev)
         {
 
@@ -15,12 +14,10 @@ namespace BetterHandCuff.EventHandlers
             {
                 HandCuffManager.RemovePlayerFromDictionary(player);
             }
-
             foreach (Ragdoll ragdoll in Ragdoll.List)
             {
                 DataSystem.RemoveData(ragdoll);
             }
-
         }
     }
 }
