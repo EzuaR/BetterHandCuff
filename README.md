@@ -39,5 +39,12 @@ Wait for updates! (;
     </tr>
   </tbody>
 </table>
+<h3>Other:</h3>
+<p><strong>- Handcuffing player from the same team</strong></p>
+<p><strong>- Switching the normal handcuffing system. Disable or enable</strong></p>
+<p><strong>- Add handcuffs on spawn <strong></p>
+<p><strong>- How many handcuffs to add on start <strong></p>
+<p><strong>- Infinity handcuffs<strong></p>
+<h4>Everything is in config!</h4>
 <h2>How to download:</h2>
 To download you can click on releases.
